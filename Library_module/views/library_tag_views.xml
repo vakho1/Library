@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_library_tag_tree" model="ir.ui.view">
+            <field name="name">library.tag.tree</field>
+            <field name="model">library.tag</field>
+            <field name="arch" type="xml">
+                <tree editable='bottom'>
+                    <field name="name"/>
+                    <field name="color" widget="color_picker"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

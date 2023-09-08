@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report
+        id="report_library_book"
+        model="library.book"
+        string="Library Book Report"
+        report_type="qweb-pdf"
+        name="Library_module.report_library"
+        file="Library_module.report_library"/>
+
+</odoo>

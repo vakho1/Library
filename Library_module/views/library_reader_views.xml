@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+        <record id="view_library_reader_tree" model="ir.ui.view">
+            <field name="name">library.reader.tree</field>
+            <field name="model">library.reader</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="dob"/>
+                    <field name="age"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_library_reader_form" model="ir.ui.view">
+            <field name="name">library.reader.form</field>
+            <field name="model">library.reader</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="dob"/>
+                            <field name="age"/>
+                            <field name="book_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_library_reader_search" model="ir.ui.view">
+            <field name="name">library.reader.search</field>
+            <field name="model">library.reader</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" string="Name"/>
+                    <field name="dob" string="Date of Birth"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

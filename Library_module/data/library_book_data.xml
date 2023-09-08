@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="reader_vaxo" model="library.reader">
+            <field name="name">Vaxo</field>
+        </record>
+        <record id="godfather" model="library.book">
+            <field name="name">GodFather</field>
+            <field name="qty_in_stock">200</field>
+            <field name="num_of_pages">509</field>
+            <field name="isbn_10">007462542X</field>
+            <field name="image" type="base64" file="Library_module/static/godfather.jpg"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('classics'), ref('mafia')])]"/>
+            <field name="reader_ids" ref="Library_module.reader_vaxo"/> 
+        </record>
+
+        <record id="reader_luke" model="library.reader">
+            <field name="name">Luke</field>
+        </record>
+        <record id="littleprince" model="library.book">
+            <field name="name">Little Prince</field>
+            <field name="qty_in_stock">210</field>
+            <field name="num_of_pages">100</field>
+            <field name="isbn_10">123456789X</field>
+            <field name="image" type="base64" file="Library_module/static/littleprince.jpg"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('classics'), ref('fantasy')])]"/> 
+            <field name="reader_ids" ref="Library_module.reader_luke"/>
+        </record>
+        
+       
+        <record id="crimeandpunishment" model="library.book">
+            <field name="name">Crime and Punishment</field>
+            <field name="qty_in_stock">150</field>
+            <field name="num_of_pages">600</field>
+            <field name="isbn_10">0553588486</field>
+            <field name="image" type="base64" file="Library_module/static/crimeandpunishment.jpg"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('classics'), ref('detective')])]"/>
+        </record>
+
+        
+        <record id="reader_michael" model="library.reader">
+            <field name="name">Michael</field>
+        </record>
+        <record id="romeoandjuliet" model="library.book">
+            <field name="name">Romeo And Juliet</field>
+            <field name="qty_in_stock">130</field>
+            <field name="num_of_pages">490</field>
+            <field name="isbn_10">0199535566</field>
+            <field name="image" type="base64" file="Library_module/static/romeoandjuliet.jpg"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('classics'), ref('romance')])]"/>
+            <field name="reader_ids" ref="Library_module.reader_michael"/> 
+        </record>
+
+        <record id="reader_holdencaulfield" model="library.reader">
+            <field name="name">Holden Caulfield</field>
+        </record>
+        <record id="thecatcherintherye" model="library.book">
+            <field name="name">The Catcher in the rye</field>
+            <field name="qty_in_stock">100</field>
+            <field name="num_of_pages">300</field>
+            <field name="isbn_10">0140449116</field>
+            <field name="image" type="base64" file="Library_module/static/catcherintherye.jpg"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('classics'), ref('detective')])]"/>
+            <field name="reader_ids" ref="Library_module.reader_holdencaulfield"/> 
+        </record>
+        
+        <record id="reader_victoria" model="library.reader">
+            <field name="name">Victoria</field>
+        </record>
+        <record id="heavenhasnofavorites" model="library.book">
+            <field name="name">Heaven Has No Favorites</field>
+            <field name="qty_in_stock">191</field>
+            <field name="num_of_pages">280</field>
+            <field name="isbn_10">0140449116</field>
+            <field name="image" type="base64" file="Library_module/static/heavenhasnofavorites.jpg"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('classics'), ref('romance')])]"/>
+            <field name="reader_ids" ref="Library_module.reader_victoria"/> 
+        </record>
+        
+        <record id="reader_madara" model="library.reader">
+            <field name="name">Madara</field>
+        </record>
+        <record id="themetamorphosis" model="library.book">
+            <field name="name">The Metamorphosis</field>
+            <field name="qty_in_stock">240</field>
+            <field name="num_of_pages">313</field>
+            <field name="isbn_10">0140449116</field>
+            <field name="image" type="base64" file="Library_module/static/TheMetamorphosis.jpg"/>
+            <field name="tag_ids" eval="[(6, 0, [ref('classics'), ref('detective')])]"/>
+            <field name="reader_ids" ref="Library_module.reader_madara"/> 
+        </record>
+</odoo> 

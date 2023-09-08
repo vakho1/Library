@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="library_book_action" model="ir.actions.act_window">
+        <field name="name">Library Books</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <record id="library_reader_action" model="ir.actions.act_window">
+        <field name="name">Library Readers</field>
+        <field name="res_model">library.reader</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="library_tag_action" model="ir.actions.act_window">
+        <field name="name">Library Tags</field>
+        <field name="res_model">library.tag</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="library_menu_root" name="Library">
+        <menuitem id="books_menu" name="Books" action="library_book_action"/>
+        <menuitem id="readers_menu" name="Readers" action="library_reader_action"/>
+        <menuitem id="tags_menu" name="Tags" action="library_tag_action"/>
+    </menuitem>
+</odoo>
