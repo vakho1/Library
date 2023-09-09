@@ -18,9 +18,16 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="library_book_category_action" model="ir.actions.act_window">
+        <field name="name">Category Names</field>
+        <field name="res_model">library.book.category</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <menuitem id="library_menu_root" name="Library">
         <menuitem id="books_menu" name="Books" action="library_book_action"/>
         <menuitem id="readers_menu" name="Readers" action="library_reader_action"/>
         <menuitem id="tags_menu" name="Tags" action="library_tag_action"/>
+        <menuitem id="category_menu" name="Category" action="library_book_category_action"/>
     </menuitem>
 </odoo>

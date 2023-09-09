@@ -7,6 +7,7 @@
         'security/ir.model.access.csv',
         'data/library_tag_data.xml',
         'data/library_book_data.xml',
+        'views/library_book_category_views.xml',
         'views/library_book_views.xml',
         'views/library_reader_views.xml',
         'views/library_tag_views.xml',

@@ -8,7 +8,7 @@ class LibraryReader(models.Model):
     _rec_name = 'name'
 
     name = fields.Char()
-    dob = fields.Date(string='Date of Birth', required=True)
+    dob = fields.Date(string='Date of Birth')
     age = fields.Integer(string='Age', compute='_compute_age', store=True)
     book_ids = fields.One2many('library.book', 'reader_ids', string='Books')
 

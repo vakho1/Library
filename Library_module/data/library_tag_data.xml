@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="classics" model="library.tag">
-        <field name="name">Classics</field>
-    </record>
-    
-    <record id="mafia" model="library.tag">
-        <field name="name">Mafia</field>
-    </record>
-    
-    <record id="romance" model="library.tag">
-        <field name="name">Romance</field>
-    </record>
-    
-    <record id="detective" model="library.tag">
-        <field name="name">Detective</field>
-    </record>
-    
-    <record id="fantasy" model="library.tag">
-        <field name="name">Fantasy</field>
+    <record id="Best_seller" model="library.tag">
+        <field name="name">Best Seller</field>
     </record>
 
-    <record id="comi_book_or_graphic_novel" model="library.tag">
-        <field name="name">Comic Book or Graphic Novel</field>
+    <!-- <record id="Biography and Memoir" model="library.tag">
+        <field name="name">Biography And Memoir</field>
     </record>
 
-    <record id="science_Fiction" model="library.tag">
-        <field name="name">Science Fiction</field>
+    <record id="New Releases" model="library.tag">
+        <field name="name">New Releases</field>
     </record>
 
-    <record id="horror" model="library.tag">
-        <field name="name">Horror</field>
+    <record id="Classic Literature" model="library.tag">
+        <field name="name">Classic Literature</field>
     </record>
+
+    <record id="Poetry" model="library.tag">
+        <field name="name">Poetry</field>
+    </record>
+
+    <record id="Award Winners" model="library.tag">
+        <field name="name">Award Winners</field>
+    </record>
+
+    <record id="Graphic Novels and Comics" model="library.tag">
+        <field name="name">Graphic Novels And Comics</field>
+    </record> -->
     
 </odoo>

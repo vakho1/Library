@@ -9,7 +9,7 @@
     <record id="library_group_manager" model="res.groups">
         <field name="name">Librarian</field>
         <field name="category_id" ref="base.module_category_library"/>
-        <field name="implied_ids" eval="[(4, ref('library_group_user'))]"/>
+        <field name="implied_ids" eval="[(4, ref('Library_module.library_group_user'))]"/>
         <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
     </record>
     

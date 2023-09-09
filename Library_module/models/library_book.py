@@ -13,9 +13,10 @@ class LibraryBook(models.Model):
     qty_in_stock = fields.Integer(string='Quantity in Stock')
     num_of_pages = fields.Integer(string='Number of Pages')
     tag_ids = fields.Many2many('library.tag', string='Tags')
-    reader_ids = fields.Many2many('library.reader')
+    reader_ids = fields.Many2one('library.reader')
     isbn_10 = fields.Char(string='ISBN 10')
     description = fields.Text(string='Description')
+    category_ids = fields.Many2many('library.book.category')
 
     _sql_constraints = [
         ('name_unique', 'unique(name)', 'Title must be unique'),

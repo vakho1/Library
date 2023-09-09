@@ -11,7 +11,10 @@
                             <span t-field="doc.name"/>
                         </h2>
                         <div>
-                            Book Genres: <span t-field="doc.tag_ids" widget="many2many_tags"/>
+                             <span t-field="doc.tag_ids" widget="many2many_tags"/>
+                        </div>
+                        <div>
+                            Category: <span t-field="doc.category_ids"/>
                         </div>
                         <div>
                             Author: <span t-field="doc.author_ids"/>

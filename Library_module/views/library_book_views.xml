@@ -20,11 +20,12 @@
                             <group>
                                 <field name="name"/>
                                 <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_create': True}"/>
+                                <field name="category_ids" widget="many2many_tags"/>
                                 <field name="author_ids" domain="[('is_author', '=', True)]"/>
                                 <field name="qty_in_stock"/>
                                 <field name="num_of_pages"/>
                                 <field name="isbn_10"/>
-                                <field name="reader_ids"/>
+                                <field name="reader_ids" groups="Library_module.library_group_manager"/>
                             </group>
                             <group>
                                 <field name="image" widget="image"/>
@@ -72,19 +73,23 @@
                                 <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
                                 
                                 <div>
+                                    Category: <field name="category_ids" widget="many2many_tags"/>
+                                </div>
+
+                                <div>
+                                    Author: <field name="author_ids"/>
+                                </div>
+
+                                <div>
+                                    Number of Pages: <field name="num_of_pages"/>
+                                </div>
+
+                                <div>
                                     Quantity in Stock: <field name="qty_in_stock"/>
                                 </div>
                                 
                                 <div>
-                                    Number of Pages: <field name="num_of_pages"/>
-                                </div>
-                                
-                                <div>
-                                    Author: <field name="author_ids"/>
-                                </div>
-                                
-                                <div>
-                                    Reader: <field name="reader_ids"/>
+                                    Reader: <field name="reader_ids" groups="Library_module.library_group_manager"/>
                                 </div>
                                 
                                 <div>
